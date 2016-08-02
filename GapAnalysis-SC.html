@@ -29,15 +29,9 @@ table {border-collapse:collapse;}
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-contrast">3.1.2 Text Contrast</a> Users can set the background color and the text color from the full color spectrum.</td>
-    <td>Wayne: Content shall enable colors to be changed using the full spectrum of colors to meet user needs for color perception as well as control over   contrast, brightness and polarity.
-    <p>Proposal: </p>
-    <p>Suggest change WCAG 1.4.8 to AA</p>
-    <p><strong>1.4.8 Visual Presentation:</strong> For the visual presentation of blocks of text, a mechanism is available to achieve the following: (Level AAA) <strong>@@(Level AA)@@</strong>    
-      </p><ol><li><p>Foreground and background colors <strong>@@(from the full range of colors available on the system)@@</strong> can be selected by the user.</p></li><li><p>Width is no more than 80 characters or glyphs (40 if <acronym title="Chinese, Japanese and Korean">CJK</acronym>).</p></li><li><p>Text is not justified (aligned to both the left and the right margins).</p></li><li><p>Line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing.</p></li><li><p>Text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window</a>.</p></li></ol>
-    </td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/4">Reflow to Single column</a> For the visual presentation of blocks of text, a mechanism is available so they user can select foreground and background colors from the full range of colors available on the system. (Level AA)</td>
     <td><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">1.4.3 Contrast (Minimum)</a> (AA)
-    <p><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast">1.4.6 Contrast (Enhanced)</a> (AAA)</p>
-    <p><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast">1.4.8 Visual Presentation</a> (AAA)</p></td>
+    <p><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast7">1.4.6 Contrast (Enhanced)</a> (AAA)</p></td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_131">1.3.1 Distinguishable Highlighting</a> (A)
       <p><a href="https://www.w3.org/TR/UAAG20/#sc_132">1.3.2 Highlighting Options</a> (AA)</p>
       <p><a href="https://www.w3.org/TR/UAAG20/#sc_133">1.3.3 Highlighting Active Keyboard Focus</a> (AA)</p>
@@ -63,8 +57,7 @@ Color is not the only visual means of conveying information, indicating an actio
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#rewrap-for-one-direction-scrolling">3.2.1 Rewrap for One Direction Scrolling</a> 
 
 Blocks of text rewrap so that only one direction of scrolling is needed, e.g., for left-right and right-left scripts (languages), usually vertical scrolling and not horizontal scrolling</td>
-    <td><p>Content shall enable users to reflow any multi-column presentation to a single column presentation.</p>
-    <p>Content shall enable text to word wrap so that lines fit the viewport width regardless of the text size.</p></td>
+    <td><p><a href="https://github.com/w3c/low-vision-SC/issues/5">WCAG 1.4.8 change to (AA)</a></p></td>
     <td><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA)</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_1815">1.8.15 Linearize Content</a> (AA)</td>
     <td>GAP - WCAG - no mention of horizontal scrolling
@@ -75,7 +68,9 @@ Blocks of text rewrap so that only one direction of scrolling is needed, e.g., f
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#reflow-to-single-column">3.2.2 Reflow to Single Column</a> 
 
 Users can set blocks of text in one continuous block, instead of in multiple columns.</td>
-    <td>Content shall enable users to reflow any multi-column presentation to a single column presentation.</td>
+    <td><p><a href="https://github.com/w3c/low-vision-SC/issues/7">Reflow to Single column</a> - Blocks of text can be displayed as a single column. (Level A)</p>
+      <p>and </p>
+      <p>Users can choose to have all content linearized in a single column, with the same primary alignment.  (Level AA)</p></td>
     <td>&nbsp;</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_1813">1.8.13 Multi-Column Text Reflow</a> (AA)</td>
     <td>GAP - WCAG no SC
@@ -84,7 +79,7 @@ Users can set blocks of text in one continuous block, instead of in multiple col
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#line-length">3.2.3 Line Length</a> Users can set the line length for blocks of text. Often the easiest way to do this (for developers, designers, and users) is for users to resize text areas and the text rewraps to change the line length.</td>
-    <td>&nbsp;</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/6">Line Length</a> - For the visual presentation of blocks of text, a mechanism is available such that width is user adjustable between no less than 5 characters and no more than 80 characters or glyphs (40 if CJK).</td>
     <td><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA)</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of text (Globally)</a> (AA)</td>
     <td>GAP - WCAG - line length multi-column not covered
@@ -93,7 +88,7 @@ Users can set blocks of text in one continuous block, instead of in multiple col
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#hyphenation">3.2.4 Hyphenation</a> Users can turn hyphenation on or off.</td>
-    <td>&nbsp;</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/8">Hyphenation</a> - A mechanism is available for users to turn hyphenation on or off.</td>
     <td>&nbsp;</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a> (AAA)</td>
     <td>GAP - WCAG no SC
@@ -102,7 +97,7 @@ Users can set blocks of text in one continuous block, instead of in multiple col
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#text-size">3.3.1 Text Size</a> Users can change the text size (font size) of all text, without zooming the entire interface.</td>
-    <td>Text can be resized to meet the user's visual requirements without creating a need for bi-directional scrolling.</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/14">Text size</a> - Except for images of text, text can be resized without assistive   technology up to 400 percent without loss of content or functionality.</td>
     <td><p><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-scale">1.4.4 Resize text</a>  (AA)</p>
     <p><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA)</p></td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a> (A)
@@ -156,8 +151,16 @@ Users can change the font face (also called font family or typeface) of all text
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#linespacing">3.4.1 Line Spacing</a> Users can change the line spacing (leading) of blocks of text.</td>
-    <td>Content enables the user to change the spacing of lines, characters and words by an amount to meet the user's needs.</td>
-    <td><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA)</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/11">Spacing</a> <p>Level AA<br />
+For the visual presentation of blocks of text, a mechanism is available to achieve the following:</p>
+<ol>
+  <li>character spacing can be selected by the user</li>
+  <li>word spacing can be selected by the user</li>
+  <li>line spacing can be selected by the user</li>
+  <li>paragraph spacing can be selected by the user</li></ol>
+</td>
+    <td>
+      <a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA)</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_141">1.4.1 Basic text formatting (Globally)</a> (A)
     <p><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a> (AA)</p></td>
     <td>GAP -  WCAG - partial, no adjusting, only minimum), 
@@ -166,7 +169,13 @@ Users can change the font face (also called font family or typeface) of all text
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#letter-spacing">3.4.2 Letter Spacing</a> Users can change the letter spacing (space between letters/characters) of blocks of text.</td>
-    <td>Content enables the user to change the spacing of lines, characters and words by an amount to meet the user's needs.</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/11">Spacing</a><br /><p>Level AA<br />
+For the visual presentation of blocks of text, a mechanism is available to achieve the following:</p>
+<ol>
+  <li>character spacing can be selected by the user</li>
+  <li>word spacing can be selected by the user</li>
+  <li>line spacing can be selected by the user</li>
+  <li>paragraph spacing can be selected by the user</li></ol></td>
     <td>&nbsp;</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of Text - see character spacing</a> (AA)</td>
     <td>GAP - WCAG no SC 
@@ -175,7 +184,13 @@ Users can change the font face (also called font family or typeface) of all text
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#word-spacing">3.4.3 Word Spacing</a> Users can change the word spacing (space between words) of blocks of text.</td>
-    <td>Content enables the user to change the spacing of lines, characters and words by an amount to meet the user's needs.</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/11">Spacing (User Need 3.4.1, 3.4.2, 3.4.3, 3.4.5)</a> <p>Level AA<br />
+For the visual presentation of blocks of text, a mechanism is available to achieve the following:</p>
+<ol>
+  <li>character spacing can be selected by the user</li>
+  <li>word spacing can be selected by the user</li>
+  <li>line spacing can be selected by the user</li>
+  <li>paragraph spacing can be selected by the user</li></ol></td>
     <td>&nbsp;</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_146">1.4.6 Advanced text formatting</a> (AAA)</td>
     <td>GAP - WCAG no SC
@@ -184,7 +199,7 @@ Users can change the font face (also called font family or typeface) of all text
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#justification">3.4.4 Justification</a> Users can change the justification / alignment (left, right, full/both, centered) of blocks of text.</td>
-    <td>Content enables the user to change the spacing of lines, characters and words by an amount to meet the user's needs.</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/10">Justification</a>For the visual presentation of blocks of text, a mechanism is available for user to select level of text justification. (AA)</td>
     <td><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA)</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of Text</a> (AA)</td>
     <td>GAP - WCAG 1.4.8 partial - no full justifiaction. 
@@ -193,9 +208,9 @@ Users can change the font face (also called font family or typeface) of all text
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#margins-and-borders">3.4.5 Margins and Borders</a> Users can change the margins (blank space) and borders (including color, width, and style) around blocks of text.</td>
-    <td><p>Content shall enable user choice is the spacing between blocks of text,   images, lists, lists items and other objects presented within the   content.</p>
-    <p>Content shall enable users to choose their own box model presentation (Note: This includes all borders, margins and padding).</p></td>
-    <td>&nbsp;</td>
+    <td><a href="https://github.com/w3c/low-vision-SC/issues/12">Margins</a> <p>For the visual presentation of blocks of text, a mechanism is available so margins (blank space) and borders (including color, width, and style) can be selected by the user. (AA)</p>
+  </td>
+    <td></td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a> (AA)
       <p><a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of text (Globally)</a> (AA)     </p>
     <p>&nbsp;</p></td>
@@ -205,7 +220,8 @@ Users can change the font face (also called font family or typeface) of all text
   </tr>
   <tr>
     <td scope="row"><a href="http://w3c.github.io/low-vision-a11y-tf/requirements.html#spacing-between-elements">3.4.6 Spacing Between Elements</a> Spacing groups related elements and separates less related elements.</td>
-    <td>Content shall enable user choice is the spacing between blocks of text,   images, lists, lists items and other objects presented within the   content.</td>
+    <td><p><a href="https://github.com/w3c/low-vision-SC/issues/12">Margins </a>- For the visual presentation of blocks of text, a mechanism is available   so margins (blank space) and borders (including color, width, and style)   can be selected by the user.</p>
+    <p> (AA)</p></td>
     <td><a href="https://www.w3.org/TR/WCAG20/#visual-audio-contrast-visual-presentation">1.4.8 Visual Presentation</a> (AAA) (&lt;p&gt; only)</td>
     <td><a href="https://www.w3.org/TR/UAAG20/#sc_142">1.4.2 Basic text formatting (by Element)</a> (AA)
     <p><a href="https://www.w3.org/TR/UAAG20/#sc_143">1.4.3 Blocks of text (Globally)</a> (AA)     </p></td>
