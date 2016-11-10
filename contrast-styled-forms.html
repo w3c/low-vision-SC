@@ -29,7 +29,7 @@ border: thin solid #959595;
       All borders were 1 px. </p>
 <p>Used <a href="https://www.paciellogroup.com/resources/contrastanalyser/">Color Contrast Analyser</a> (https://www.paciellogroup.com/resources/contrastanalyser/) on Windows and Macintosh. </p>
 <p>Is there enough contrast difference between 4.5:1 for enabled controls and 3.0:1 for disabled controls, such that user with low vision can tell the difference between them?</p>
-
+		<p><strong>NOTE:</strong>Firefox and IE do NOT allow styling of radio button or checkbox controls.</p>
 <h2>Examples</h2>
 <form>
       <fieldset id="forms__input">
@@ -101,9 +101,7 @@ border: thin solid #959595;
           <textarea id="textarea1" rows="8" cols="48" disabled="disabled"></textarea>
         </p>
   </fieldset>
-      <fieldset>
-  </fieldset>
-      <fieldset id="forms__action">
+     <fieldset id="forms__action">
           <legend><h3>Action buttons</h3></legend>
     <p>
           <input value="Input" type="submit">
@@ -111,8 +109,7 @@ border: thin solid #959595;
           <button type="submit">not disabled Button</button>
           <button type="submit" disabled="disabled">disabled Button</button>
         </p>
-    <p>&nbsp; </p>
-  </fieldset>
+     </fieldset>
     </form>
 </body>
 </html>
