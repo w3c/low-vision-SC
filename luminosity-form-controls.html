@@ -1,331 +1,409 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-	<meta charset="utf-8">
-	<title>Luminosity Brightness of Enabled/Disabled Form Controls
-using default browser styling </title>
-    <style>
-	table {width: 50%;}
-table, td, th {border-collapse:collapse; border: medium black solid;}
-th, td {padding-left: 5px; }
-
-	</style>
-
+<meta charset="utf-8">
+<title>Test Title</title>
+<style>
+table {
+	width: 50%;
+}
+table, td, th {
+	border-collapse: collapse;
+	border: medium black solid;
+}
+th, td {
+	padding-left: 5px;
+	vertical-align: top;
+}
+</style>
 </head>
 
 <body>
-
-	<h1>Luminosity Brightness of Enabled/Disabled Form Controls<br>
-	  using default browser styling
-	</h1>
-	<p>Standard HTML form controls. No styling -- default browser styling. Where possible the darkest color was used for contrast determination. All borders were 1 px, used 4.5:1 luminosity ratio as passing per WCAG 1.4.3. Used the latest version of each browser. No access to Edge.</p>
-	<p>Used <a href="https://www.paciellogroup.com/resources/contrastanalyser/">Color Contrast Analyser</a> (https://www.paciellogroup.com/resources/contrastanalyser/) on Windows and Macintosh. </p>
-	<h2>Results: </h2>
-	<ul>
-	  <li>Only IE10 PASSED for borders on ENABLED form control - FF, CHROME, SAFARI FAILED.</li>
-	  <li>NO browser passed for disabled elements.</li>
+<h1>Luminosity Brighness of Enabled/Disabled Form Controls<br>
+  using default browser styling </h1>
+<p>Standard HTML form controls. No styling -- default browser styling. Where possible the darkest color was used for contrast determination. All borders were 1 px, used 4.5:1 lumosity ratio as passing per WCAG 1.4.3. Used the latest version of each browser. No access to Edge.</p>
+<p>Used <a href="https://www.paciellogroup.com/resources/contrastanalyser/">Color Contrast Analyser</a> (https://www.paciellogroup.com/resources/contrastanalyser/) on Windows and Macintosh. </p>
+	<p><a href="#exemplar">Form Controls exemplar contrast- enabled 4.5:1, disabled 3:1</a></p>
+<h2>Results: </h2>
+<ul>
+  <li>Only IE10 PASSED for borders on ENABLED form control - FF, CHROME, SAFARI FAILED.</li>
+  <li>NO browser passed for disalbed elements.</li>
 </ul>
-
-	<h2>Examples</h2>
-	<form>
-      <fieldset id="forms__input">
-        <h3>
-          <legend>Input fields</legend>
-        </h3>
-
-        <p>Not disabled: <input></p>
-	<p>Disabled: <input disabled="disabled"></p>
-	<table>
-	  <tr>
-	    <th scope="col">Browser</th>
-	    <th scope="col">enabled contrast</th>
-	    <th scope="col">disabled contrast</th>
+<h2>Examples</h2>
+<form>
+  <fieldset id="forms__input">
+    <h3>
+      <legend>Input fields</legend>
+    </h3>
+    <p>Not disabled:
+      <input>
+    </p>
+    <p>Disabled:
+      <input disabled="disabled">
+    </p>
+    <table>
+      <tr>
+        <th scope="col">Browser</th>
+        <th scope="col">enabled contrast</th>
+        <th scope="col">disabled contrast</th>
       </tr>
-	  <tr>
-	    <td>FireFox</td>
-	    <td> <p>top border 2.2:1</p>
-        <p>other borders 1.3: 1</p></td>
-	    <td><p> borders 2.1:1</p>
-        <p>inside fill 1.1:1 with border</p></td>
+      <tr>
+        <td>FireFox</td>
+        <td><p>top border 2.2:1</p>
+          <p>other borders 1.3: 1</p></td>
+        <td><p> borders 2.1:1</p>
+          <p>inside fill 1.1:1 with border</p></td>
       </tr>
-	  <tr>
-	    <td>Chrome</td>
-	    <td>borders 2.4:1</td>
-	    <td><p>borders 2.4:1</p>
-        <p>inside fill 2.0:1 with border</p></td>
+      <tr>
+        <td>Chrome</td>
+        <td>borders 2.4:1</td>
+        <td><p>borders 2.4:1</p>
+          <p>inside fill 2.0:1 with border</p></td>
       </tr>
-	  <tr>
-	    <td>Safari</td>
-	    <td>border: 1.6:1</td>
-	    <td>border 1.3:1</td>
+      <tr>
+        <td>Safari</td>
+        <td>border: 1.6:1</td>
+        <td>border 1.3:1</td>
       </tr>
-	  <tr>
-	    <td>IE</td>
-	    <td><p>borders 5.0:1</p></td>
-	    <td><p>border 1.9:1</p>
-        <p>inside fill 1.5:1 with border</p></td>
+      <tr>
+        <td>IE</td>
+        <td><p>borders 5.0:1</p></td>
+        <td><p>border 1.9:1</p>
+          <p>inside fill 1.5:1 with border</p></td>
       </tr>
-	  </table>
-	<p>&nbsp;</p>
-                    </fieldset>
-
-                    
-      <fieldset id="forms__select">
-          <h3>
-            <legend>Select menus</legend>
-          </h3>
-   <p>Not Disabled 
-     <select id="select">
-         
-                                    <option>Option One</option>
-                                    <option>Option Two</option>
-                                    <option>Option Three</option>
-     
+    </table>
+    <p>.</p>
+  </fieldset>
+  <fieldset id="forms__select">
+    <h3>
+      <legend>Select menus</legend>
+    </h3>
+    <p>Not Disabled
+      <select id="select">
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
       </select>
-      </p>
-                        <p>
-                            <label for="select">Disabled</label>
-                            <select id="select" disabled>
-                                
-                                    <option>Option One</option>
-                                    <option>Option Two</option>
-                                    <option>Option Three</option>
-                               
-                            </select>
-                        </p>
-                        <table>
-                          <tr>
-                            <th scope="col">Browser</th>
-                            <th scope="col">enabled contrast</th>
-                            <th scope="col">disabled contrast</th>
-                          </tr>
-                          <tr>
-                            <td>FireFox</td>
-                            <td><p>top border 2.2:1</p>
-                            <p>other borders 1.3: 1</p>
-                            <p>Text for choices 21:1</p></td>
-                            <td><p> borders 2.1:1</p>
-                            <p> Text for Choices: 4.0:1  with greyed background</p></td>
-                          </tr>
-                          <tr>
-                            <td>Chrome</td>
-                            <td><p>borders 2.3:1</p>
-                            <p>text for choices 17.4:1</p></td>
-                            <td><p>borders 2.3:1</p>
-                            <p>text for choices 3.2:1  with greyed background</p></td>
-                          </tr>
-                          <tr>
-                            <td>Safari</td>
-                            <td><p>borders 1.4:1</p>
-                            <p>text for choices 21.0:1</p></td>
-                            <td><p>borders 1.4:1</p>
-                            <p>text for choices 3.9:1</p></td>
-                          </tr>
-                          <tr>
-                            <td>IE</td>
-                            <td><p>borders 5.0:1</p>
-                            <p>text for choices 8.6:1</p></td>
-                            <td><p>borders1.9:1</p>
-                            <p>text for choices 3.9:1 with greyed background</p></td>
-                          </tr>
-                        </table>
- 
-      </fieldset>
-      <fieldset id="forms__checkbox">
-                    <h3>
-                          <legend>Checkboxes</legend>
-        </h3>
-
-                        <ul class="list list--bare">
-                            <li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> 
-                              not disabled</label></li>
-                            <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" disabled>
-                            disabled </label></li>
-                        </ul>
-                        <table>
-                          <tr>
-                            <th scope="col">Browser</th>
-                            <th scope="col">enabled contrast</th>
-                            <th scope="col">disabled contrast</th>
-                          </tr>
-                          <tr>
-                            <td>FireFox</td>
-                            <td><p>border 3.2:1</p>
-                            <p>check mark 4.5:1 to 3.0:1 gradient background</p></td>
-                            <td>borders 2.1:1</td>
-                          </tr>
-                          <tr>
-                            <td>Chrome</td>
-                            <td><p>borders 2.0:1</p>
-                            <p>checkmark 7.5:1 </p></td>
-                            <td>borders 1.5:1</td>
-                          </tr>
-                          <tr>
-                            <td>Safari</td>
-                            <td><p>top border 2.9:1</p>
-                            <p>other borders 2.2:1</p>
-                            <p>checkmark 10.2:1</p></td>
-                            <td><p>top border 1.6:1</p>
-                            <p>borders1.4:1</p></td>
-                          </tr>
-                          <tr>
-                            <td>IE</td>
-                            <td><p>border 5.0:1</p>
-                            <p>checkmark 16:1</p></td>
-                            <td><p>borders 1.9:1</p></td>
-                          </tr>
-                        </table>
- 
-      </fieldset>
-      <fieldset id="forms__radio">
-                      <h3>
-                          <legend>Radio buttons</legend>
-        </h3>
-
-                        <ul class="list list--bare">
-                            <li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> 
-                              not disabled</label></li>
-                            <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio" disabled> 
-                            disabled</label></li>
-                        </ul>
-                        <table>
-                          <tr>
-                            <th scope="col">Browser</th>
-                            <th scope="col">enabled contrast</th>
-                            <th scope="col">disabled contrast</th>
-                          </tr>
-                          <tr>
-                            <td>FireFox</td>
-                            <td><p>border 2.8:1</p>
-                            <p>selector (dot) 4:6:1 [8x8 pixel avg)</p></td>
-                            <td>border 1.9:1</td>
-                          </tr>
-                          <tr>
-                            <td>Chrome</td>
-                            <td><p>border 1.6:1</p>
-                            <p>selector (dot) 4:8:1 [6x6 pixel avg)</p></td>
-                            <td>borders 1.3:1</td>
-                          </tr>
-                          <tr>
-                            <td>Safari</td>
-                            <td><p>border 2.1:1 </p>
-                            <p>selector (dot) 10.4:1</p></td>
-                            <td>borders 1.3:1</td>
-                          </tr>
-                          <tr>
-                            <td>IE</td>
-                            <td><p>border 3.9:1</p>
-                            <p>selector (dot) 10.1:1 [6x6 pixel avg)</p></td>
-                            <td>border 1.8:1</td>
-                          </tr>
-                        </table>
- 
-      </fieldset>
-      <fieldset id="forms__textareas">
-                        <h3>
-                          <legend>Textareas</legend>
-                        </h3>
-  <p>
-                        
+    </p>
+    <p>
+      <label for="select">Disabled</label>
+      <select id="select" disabled>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+    </p>
+    <table>
+      <tr>
+        <th scope="col">Browser</th>
+        <th scope="col">enabled contrast</th>
+        <th scope="col">disabled contrast</th>
+        <th scope="col">Select contrast<br>
+          not stylable</th>
+      </tr>
+      <tr>
+        <td>FireFox</td>
+        <td><p>top border 2.2:1</p>
+          <p>other borders 1.3: 1</p>
+          <p>Text for choices 21:1</p></td>
+        <td><p> borders 2.1:1</p>
+          <p> Text for Choices: 4.0:1  with greyed background</p></td>
+        <td><p>2.9:1</p>
+          <p>#3399FF</p></td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td><p>borders 2.3:1</p>
+          <p>text for choices 17.4:1</p></td>
+        <td><p>borders 2.3:1</p>
+          <p>text for choices 3.2:1  with greyed background</p></td>
+        <td><p>3.2:1</p>
+          <p>#1E90FF</p></td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td><p>borders 1.4:1</p>
+          <p>text for choices 21.0:1</p></td>
+        <td><p>borders 1.4:1</p>
+          <p>text for choices 3.9:1</p></td>
+        <td><p>3.2:1</p>
+          <p>#3192F9</p></td>
+      </tr>
+      <tr>
+        <td>IE</td>
+        <td><p>borders 5.0:1</p>
+          <p>text for choices 8.6:1</p></td>
+        <td><p>borders1.9:1</p>
+          <p>text for choices 3.9:1 with greyed background</p></td>
+        <td><p>2.3:1</p>
+          <p>#5AB7E3</p></td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset id="forms__checkbox">
+    <h3>
+      <legend>Checkboxes</legend>
+    </h3>
+    <ul class="list list--bare">
+      <li>
+        <label for="checkbox1">
+          <input id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+          not disabled</label>
+      </li>
+      <li>
+        <label for="checkbox2">
+          <input id="checkbox2" name="checkbox" type="checkbox" disabled>
+          disabled </label>
+      </li>
+    </ul>
+    <table>
+      <tr>
+        <th scope="col">Browser</th>
+        <th scope="col">enabled contrast</th>
+        <th scope="col">disabled contrast</th>
+      </tr>
+      <tr>
+        <td>FireFox</td>
+        <td><p>border 3.2:1</p>
+          <p>check mark 4.5:1 to 3.0:1 gradient background</p></td>
+        <td>borders 2.1:1</td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td><p>borders 2.0:1</p>
+          <p>checkmark 7.5:1 </p></td>
+        <td>borders 1.5:1</td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td><p>top border 2.9:1</p>
+          <p>other borders 2.2:1</p>
+          <p>checkmark 10.2:1</p></td>
+        <td><p>top border 1.6:1</p>
+          <p>borders1.4:1</p></td>
+      </tr>
+      <tr>
+        <td>IE</td>
+        <td><p>border 5.0:1</p>
+          <p>checkmark 16:1</p></td>
+        <td><p>borders 1.9:1</p></td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset id="forms__radio">
+    <h3>
+      <legend>Radio buttons</legend>
+    </h3>
+    <ul class="list list--bare">
+      <li>
+        <label for="radio1">
+          <input id="radio1" name="radio" type="radio" class="radio" checked="checked">
+          not disabled</label>
+      </li>
+      <li>
+        <label for="radio2">
+          <input id="radio2" name="radio" type="radio" class="radio" disabled>
+          disabled</label>
+      </li>
+    </ul>
+    <table>
+      <tr>
+        <th scope="col">Browser</th>
+        <th scope="col">enabled contrast</th>
+        <th scope="col">disabled contrast</th>
+      </tr>
+      <tr>
+        <td>FireFox</td>
+        <td><p>border 2.8:1</p>
+          <p>selector (dot) 4:6:1 [8x8 pixel avg)</p></td>
+        <td>border 1.9:1</td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td><p>border 1.6:1</p>
+          <p>selector (dot) 4:8:1 [6x6 pixel avg)</p></td>
+        <td>borders 1.3:1</td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td><p>border 2.1:1 </p>
+          <p>selector (dot) 10.4:1</p></td>
+        <td>borders 1.3:1</td>
+      </tr>
+      <tr>
+        <td>IE</td>
+        <td><p>border 3.9:1</p>
+          <p>selector (dot) 10.1:1 [6x6 pixel avg)</p></td>
+        <td>border 1.8:1</td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset id="forms__textareas">
+    <h3>
+      <legend>Textareas</legend>
+    </h3>
+    <p>
       <label for="textarea">Not Disabled </label>
-                          <textarea id="textarea" rows="8" cols="48"  ></textarea>
-        </p>
-                        <p>
-                        
-                            <label for="textarea1"> disabled </label>
-                          <textarea id="textarea1" rows="8" cols="48" disabled></textarea>
-                        </p>
-                        <table>
-                          <tr>
-                            <th scope="col">Browser</th>
-                            <th scope="col">enabled contrast</th>
-                            <th scope="col">disabled contrast</th>
-                          </tr>
-                          <tr>
-                            <td>FireFox</td>
-                            <td><p>top border 2.2:1</p>
-                            <p>other borders 1.3:1</p>
-                            <p>text 21:1</p></td>
-                            <td><p>borders 2.2:1</p>
-                            <p>inside with border 1.9:1</p></td>
-                          </tr>
-                          <tr>
-                            <td>Chrome</td>
-                            <td><p>border 2.8:1</p>
-                            <p>text 7.8:1</p></td>
-                            <td><p>border 2.4:1</p>
-                            <p>inside with border 2.0:1</p></td>
-                          </tr>
-                          <tr>
-                            <td>Safari</td>
-                            <td><p>border 4.7:1</p>
-                            <p>text 21.0</p></td>
-                            <td><p>border 2.8:1</p>
-                   </td>
-                          </tr>
-                          <tr>
-                            <td>IE</td>
-                            <td><p>border 16:1</p>
-                            <p>text 16.1:1</p></td>
-                            <td><p>border 1.9:1</p>
-                            <p>inside with border 1.5:1</p></td>
-                          </tr>
-                        </table>
- 
-      </fieldset>
-      <fieldset></fieldset>
-
-      <fieldset id="forms__action">
-        <h3>
-                          <legend>Action buttons</legend>
-        </h3>
-
-                        <p>
-                            <input type="submit" value="Input">
-                            <input type="submit" value="Disabled" disabled> <button type="submit">not disabled Button</button>
-                              <button type="submit" disabled>disabled Button</button>
-          </p>
-                        <table>
-                          <tr>
-                            <th scope="col">Browser</th>
-                            <th scope="col">enabled contrast</th>
-                            <th scope="col">disabled contrast</th>
-                          </tr>
-                          <tr>
-                            <td>FireFox</td>
-                            <td><p>border 5:1</p>
-                            <p>text 20.4:1 - 13.5:1 (gradient button background)</p></td>
-                            <td><p>border 2.1:1</p>
-                            <p>text 4.6:1  with background</p></td>
-                          </tr>
-                          <tr>
-                            <td>Chrome</td>
-                            <td><p>border 2.5:1</p>
-                            <p>text 16.1:1 - 18:1 (gradient button background)</p></td>
-                            <td><p>border 2.5:1</p>
-                            <p>text 2.6:1  with background</p></td>
-                          </tr>
-                          <tr>
-                            <td>Safari</td>
-                            <td><p>border 1.4:1</p>
-                            <p>text 21.1:1</p></td>
-                            <td><p>border 1.2:1</p>
-                            <p>text 4.0:1</p></td>
-                          </tr>
-                          <tr>
-                            <td>IE</td>
-                            <td><p>border 5.0:1</p>
-                            <p>text 10.6:1 - 9.4 (gradient button background)</p></td>
-                            <td><p>border 1.9:1</p>
-                            <p>text 3.9:1 with background</p></td>
-                          </tr>
-                        </table>
-          <p>&nbsp; </p>
-                    </fieldset>
-
-                  
+      <textarea id="textarea" rows="8" cols="48"  ></textarea>
+      &lt;-- style resizer control-poor contrast (::-webkit-resizer)</p>
+    <p>
+      <label for="textarea1"> disabled </label>
+      <textarea id="textarea1" rows="8" cols="48" disabled></textarea>
+    </p>
+    <table>
+      <tr>
+        <th scope="col">Browser</th>
+        <th scope="col">enabled contrast</th>
+        <th scope="col">disabled contrast</th>
+      </tr>
+      <tr>
+        <td>FireFox</td>
+        <td><p>top border 2.2:1</p>
+          <p>other borders 1.3:1</p>
+          <p>text 21:1</p></td>
+        <td><p>borders 2.2:1</p>
+          <p>inside with border 1.9:1</p></td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td><p>border 2.8:1</p>
+          <p>text 7.8:1</p></td>
+        <td><p>border 2.4:1</p>
+          <p>inside with border 2.0:1</p></td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td><p>border 4.7:1</p>
+          <p>text 21.0</p></td>
+        <td><p>border 2.8:1</p></td>
+      </tr>
+      <tr>
+        <td>IE</td>
+        <td><p>border 16:1</p>
+          <p>text 16.1:1</p></td>
+        <td><p>border 1.9:1</p>
+          <p>inside with border 1.5:1</p></td>
+      </tr>
+    </table>
+  </fieldset>
+  <fieldset>
+  </fieldset>
+  <fieldset id="forms__action">
+    <h3>
+      <legend>Action buttons</legend>
+    </h3>
+    <p>
+      <input type="submit" value="Input">
+      <input type="submit" value="Disabled" disabled>
+      <button type="submit">not disabled Button</button>
+      &nbsp;
+      <button type="submit" disabled>disabled Button</button>
+    </p>
+    <table>
+      <tr>
+        <th scope="col">Browser</th>
+        <th scope="col">enabled contrast</th>
+        <th scope="col">disabled contrast</th>
+      </tr>
+      <tr>
+        <td>FireFox</td>
+        <td><p>border 5:1</p>
+          <p>text 20.4:1 - 13.5:1 (gradient button background)</p></td>
+        <td><p>border 2.1:1</p>
+          <p>text 4.6:1  with background</p></td>
+      </tr>
+      <tr>
+        <td>Chrome</td>
+        <td><p>border 2.5:1</p>
+          <p>text 16.1:1 - 18:1 (gradient button background)</p></td>
+        <td><p>border 2.5:1</p>
+          <p>text 2.6:1  with background</p></td>
+      </tr>
+      <tr>
+        <td>Safari</td>
+        <td><p>border 1.4:1</p>
+          <p>text 21.1:1</p></td>
+        <td><p>border 1.2:1</p>
+          <p>text 4.0:1</p></td>
+      </tr>
+      <tr>
+        <td>IE</td>
+        <td><p>border 5.0:1</p>
+          <p>text 10.6:1 - 9.4 (gradient button background)</p></td>
+        <td><p>border 1.9:1</p>
+          <p>text 3.9:1 with background</p></td>
+      </tr>
+    </table>
+    <p>. </p>
+  </fieldset>
+  <fieldset>
+    <h3 id="exemplar">
+      <legend>Form Controls exemplar contrast- enabled 4.5:1, disabled 3</legend>
+    </h3>
+    <p>using css </p>
+    <p>enabled - <code>style="border: 1px solid #777;"</code> </p>
+    <p>disabled - <code>style="border: 1px solid #959595;"</code></p>
+    <p>Not disabled:
+      <input style="border: 1px solid #777;">
+    </p>
+    <p>Disabled:
+      <input style="border: 1px solid #959595;" disabled="disabled">
+    </p>
+    <select  style="border: 1px solid #777;" id="select">
+      <option>Option One</option>
+      <option>Option Two</option>
+      <option>Option Three</option>
+    </select>
+    <p>
+      <label for="select">Disabled</label>
+      <select style="border: 1px solid #959595;" id="select" disabled>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+    </p>
+    <ul class="list list--bare">
+      <li>
+        <label for="checkbox1">
+          <input  style="outline: 1px solid #777; margin: 0; padding: 0;"  id="checkbox1" name="checkbox" type="checkbox" checked="checked">
+          not disabled</label>
+        (used style=&quot;outline: 1px solid #777; margin: 0; padding: 0;&quot;) </li>
+      <li>
+        <label for="checkbox2">
+          <input style="outline: 1px solid #959595; margin: 0; padding: 0;" id="checkbox2" name="checkbox" type="checkbox" disabled>
+          disabled 
+          (used style=&quot;outline: 1px solid #959595; margin: 0; padding: 0;&quot;) </label>
+      </li>
+    </ul>
+    <ul class="list list--bare">
+      <li>
+        <label for="radio1">
+          <input   id="radio1" name="radio" type="radio"  checked="checked">
+          not disabled</label>
+        (not able to style radio buttons</li>
+      <li>
+        <label for="radio2">
+          <input id="radio2" name="radio" type="radio" disabled>
+          disabled</label>
+      </li>
+    </ul>
+    <p>
+      <label for="textarea">Not Disabled </label>
+      <textarea style="border: 1px solid #777;" id="textarea" rows="8" cols="48"  ></textarea>
+    </p>
+    <p>
+      <label for="textarea1"> disabled </label>
+      <textarea style="border: 1px solid #959595;" id="textarea1" rows="8" cols="48" disabled></textarea>
+    </p>
+    <p>
+      <input style="border: 1px solid #777;" type="submit" value="Input">
+      <input style="border: 1px solid #959595;" type="submit" value="Disabled" disabled>
+      <button style="border: 1px solid #777;" type="submit">not disabled Button</button>
+      &nbsp;
+      <button style="border: 1px solid #959595;" type="submit" disabled>disabled Button</button>
+    </p>
+  </fieldset>
 </form>
-
-
-
-</body></html>
+</body>
+</html>
