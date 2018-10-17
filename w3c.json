@@ -1,5 +1,7 @@
 {
     "group":      81151
-,   "contacts":   slhenry
+,   "contacts":   [ "slhenry" ]
 ,   "shortName":  "low-vision-SC"
+, "repo-type": "rec-track"
+, "policy": "restricted"
 }
